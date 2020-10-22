@@ -1,0 +1,282 @@
+.wrap {
+    margin: 1% auto 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 1640px;
+}
+
+.tile {
+    width: 533px;
+    height: 400px;
+    margin: 10px;
+    display: inline-block;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+    box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
+    overflow: hidden;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+
+}
+
+.tile img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: all 0.4s ease-out;
+}
+
+.tile .text {
+    /*   z-index:99; */
+    position: absolute;
+    padding: 30px;
+    height: calc(100% - 60px);
+
+}
+
+
+
+.tile h2 {
+    font-weight: 100;
+    margin: 20px 0 0 0;
+    font-family: 'Barlow', sans-serif;
+    transform: translateX(200px);
+}
+
+.tile p {
+    font-weight: 300;
+    margin: 20px 0 0 0;
+    line-height: 25px;
+    /*   opacity:0; */
+    transform: translateX(-200px);
+    transition-delay: 0.2s;
+    font-family: 'Barlow', sans-serif;
+}
+
+.animate-text {
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.tile:hover {
+    /*   background-color:#99aeff; */
+    box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.64);
+    transform: scale(1.05);
+    background-color: rgb(254, 0, 0);
+}
+
+.tile:hover img {
+    opacity: 0.2;
+}
+
+.tile:hover .animate-text {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media (max-width: 1640px) {
+    .wrap {
+        width: 1000px;
+    }
+
+    .tile {
+        width: 384px;
+        height: 288px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .wrap {
+        flex-direction: column;
+        width: 384px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.Size {
+    margin: 2% auto 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 1640px;
+}
+
+.Logo {
+    width: 1623px;
+    height: 984.6px;
+    margin: 10px;
+    display: inline-block;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+    
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+
+}
+
+.Logo img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    align-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.4s ease-out;
+}
+
+.Logo .text {
+    /*   z-index:99; */
+    position: relative;
+     margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    height: calc(100% - 60px);
+    align-content: center;
+
+}
+
+
+
+.Logo h2 {
+    font-weight: 100;
+    font-size: 75px;
+    margin: 20px 0 0 0;
+    font-family: 'Barlow', sans-serif;
+    transform: translateX(200px);
+    margin-bottom: 30px;
+    margin-top: 20%;
+}
+
+.Logo p {
+    font-weight: 300;
+    margin: 40px 1 1 1;
+    font-size: 30px;
+    line-height: 25px;
+    /*   opacity:0; */
+    transform: translateX(-200px);
+    transition-delay: 0.2s;
+    font-family: 'Barlow', sans-serif;
+}
+
+
+.Logo:hover {
+    /*   background-color:#99aeff; */
+    box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.64);
+    transform: scale(1.05);
+    background-color: rgb(254, 0, 0);
+}
+
+.Logo:hover img {
+    opacity: 0.2;
+}
+
+.Logo:hover .animate-text {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media (max-width: 1640px) {
+    .Size {
+        width: 1000px;
+    }
+
+    .Logo {
+        width: 1024px;
+        height: 576px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .Size {
+        flex-direction: column;
+        width: 384px;
+    }
+    .Logo {
+        width: 384px;
+        height: 288px;
+    }
+    .Logo h2{
+        font-size: 30px;
+        margin: 10px;
+        
+    }
+    .Logo p{
+        font-size: 20px;
+        
+    }
+}
+
+.Hours{
+    
+    background-color: rgb(254, 0, 0);
+    color: white;
+    font-family: 'Barlow', sans-serif;   
+    width: 85.2%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;    
+    
+}
+
+.space1{
+    background-color: rgb(254, 0, 0);
+    height: 35px;
+    width: 85.2%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    
+}
+
+.space2{
+    background-color: rgb(254, 0, 0);
+    height: 35px;
+    width: 85.2%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+#Days{
+    
+    font-size: 50px;
+    width: auto;
+    text-align: center;   
+    font-family: 'Barlow', sans-serif;  
+}
+
+#Time{
+    
+    font-size: 35px;
+    width: auto;
+    margin-bottom: 0%;
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;  
+}

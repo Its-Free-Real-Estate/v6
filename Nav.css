@@ -1,0 +1,160 @@
+
+
+.button {
+    --background: white;
+    --text: black;
+    --font-size: 20px;
+    --duration: .40s;
+    --move-hover: -4px;
+  
+    --font-shadow: var(--font-size);
+    padding: 16px 45px;
+    font-family: 'Barlow', sans-serif;
+    line-height: var(--font-size);
+    border-radius: 40px;   
+    justify-content: center;
+    display: inline-block;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    font-size: var(--font-size);
+    background: var(--background);
+    color: var(--text);
+    box-shadow: var(--shadow);
+    -webkit-transform: translateY(var(--y));
+    transform: translateY(var(--y));
+    -webkit-transition: box-shadow var(--duration) ease, -webkit-transform var(--duration) ease;
+    transition: box-shadow var(--duration) ease, -webkit-transform var(--duration) ease;
+    transition: transform var(--duration) ease, box-shadow var(--duration) ease;
+    transition: transform var(--duration) ease, box-shadow var(--duration) ease, -webkit-transform var(--duration) ease;
+  
+   
+}
+
+.button div {
+    display: flex;
+    overflow: hidden;
+    text-shadow: 0 var(--font-shadow) 0 var(--text);
+}
+
+.button div span {
+    display: block;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    font-style: normal;
+    -webkit-transition: -webkit-transform var(--duration) ease;
+    transition: -webkit-transform var(--duration) ease;
+    transition: transform var(--duration) ease;
+    transition: transform var(--duration) ease, -webkit-transform var(--duration) ease;
+    -webkit-transform: translateY(var(--m));
+    transform: translateY(var(--m));
+}
+
+.button div span:nth-child(1) {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+
+.button div span:nth-child(2) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.button div span:nth-child(3) {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+.button div span:nth-child(4) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.button div span:nth-child(5) {
+    -webkit-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+}
+
+.button div span:nth-child(6) {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.button div span:nth-child(7) {
+    -webkit-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+}
+
+.button div span:nth-child(8) {
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.button div span:nth-child(9) {
+    -webkit-transition-delay: 0.45s;
+    transition-delay: 0.45s;
+}
+
+.button div span:nth-child(10) {
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.button div span:nth-child(11) {
+    -webkit-transition-delay: 0.55s;
+    transition-delay: 0.55s;
+}
+
+.button:hover {
+    --y: var(--move-hover);
+    --shadow: var(--shadow-hover);
+}
+
+.button:hover span {
+    --m: calc(var(--font-size) * -1);
+}
+
+
+
+.container {    
+    margin-top: 0.1%;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+ 
+    
+    
+    
+
+}
+
+
+.img-responsive {
+  position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+
+a {
+
+    color: black;
+    text-decoration: none;
+    
+    
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;   
+   
+}
+
+
+.bar1 {
+    background-color: rgb(254, 0, 0);
+    height: 2px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.1%
+}
